@@ -17,13 +17,13 @@ The links of the products must be saves in the file named <b>links.txt</b> to st
 8: Now run the 'plot_graph.py' file to view the time-price graph of your product.
 
 # Requirments
-'''
+```
 1. re 
 2. requests
 3. BeautifulSoup
 4. Matplotlib
 5. Pandas
-'''
+```
 
 # Note 
 <b>This tool is still in development.</b>
