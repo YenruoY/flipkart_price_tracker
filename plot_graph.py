@@ -36,7 +36,7 @@ def plot_graph():
             price = data['Price']
             product_name = data['Name']
 
-            data['Date-time'] = pd.to_datetime(data['Date-time'].astype(str), format="%Y-%m-%d %H:%M:%S.%f")
+            data['Date-time'] = pd.to_datetime(data['Date-time'].astype(str), format="%Y-%m-%d %H:%M")
 
             plt.plot_date(price_data, price, linestyle="solid", label=product_name[0])
             plt.gcf().autofmt_xdate()

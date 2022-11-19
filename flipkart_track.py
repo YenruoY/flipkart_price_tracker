@@ -30,14 +30,16 @@ def get_item_name(link):
 
 def check_links():
     """ Checks for links.txt file """
-    path = ""   # Paste the path here
+## Note
+    path = ""   # Paste the path here in between quotes
+
     if os.path.exists('{0}/links.txt'.format(path)):
         fo = open("{0}/links.txt".format(path), "r")
         lines = fo.readlines()
         fo.close()
         return lines
     else:
-        #print("File doesn't exist. Create a file with the name 'links.txt'")
+        print("File doesn't exist. Create a file with the name 'links.txt'")
         return -1
 
 
@@ -60,9 +62,13 @@ def main():
             item_name = get_item_name(data)
 
             # Current time
-            current_time = datetime.datetime.now()
+            tmp_time = datetime.datetime.now()
+            current_time = tmp_time.strftime("%Y-%m-%d %H:%M")
 
-            path = ""   # Past the path here
+
+## Note
+            path = ""   # Past the path here in between quotes
+
             #print("Checking cache files...")
             if os.path.exists('{0}/cache/{1}'.format(path,item_id)):
                 row = [item_id, price, current_time, item_name]
