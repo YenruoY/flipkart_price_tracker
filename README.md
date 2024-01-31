@@ -33,13 +33,18 @@ The links of the products must be saves in the file named <b>links.txt</b> to st
 **Note :** Run the `flipkart_track.py` manually first to check if everything is working properly. If everything works, you will see some files in the cache folder.
 
 # Requirments
-```
+
 1. re 
 2. requests
 3. BeautifulSoup
 4. Matplotlib
 5. Pandas
-```
 
 # Note 
 <b>This tool is still in development.</b>
+
+# Updates about the project on 31/01/2024
+
+The script is very outdated and have lots of issue for now. I'm going to rebuild the whole script from scratch after completing Amazon price tracking script.
+
+
